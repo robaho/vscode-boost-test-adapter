@@ -113,6 +113,8 @@ This extension is based on code from these extensions:
 - https://github.com/newdigate/vscode-boost-test-adapter.git
 
 ## Changelog
+* Update 3.6.8
+  * Update regex to support other boost test output formats
 * Update 3.6.7
   * Use workspace folder as default source prefix.
 * Update 3.6.6
