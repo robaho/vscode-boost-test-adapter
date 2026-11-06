@@ -43,8 +43,8 @@ function parseTestModuleLabel(node: Node): string {
 //  a) node_name|file_path(line_number)
 //  b) node_name|file_path(line_number)|some_other_stuff
 //
-const regexLabelWith2Parts = /^(\w+)\|(.+)\((\d+)\)$/;
-const regexLabelWith3Parts = /^(\w+)\|(.+)\((\d+)\)\|.+$/;
+const regexLabelWith2Parts = /^([^|]+)\|(.+)\((\d+)\)$/;
+const regexLabelWith3Parts = /^([^|]+)\|(.+)\((\d+)\)\|.+$/;
 
 function parseLabel(node: Node): LabelInfo {
     const label = node.attr_list.find(a => a.id === 'label');
